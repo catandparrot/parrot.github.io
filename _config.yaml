@@ -1,0 +1,4 @@
+deploy:
+  type: git
+  respository: git@github.com:catandparrot/parrot.github.io.git
+  branch: main
