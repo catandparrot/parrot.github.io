@@ -1,0 +1,74 @@
+.btn-link {
+	position:relative;
+	display:inline-block;
+	overflow:hidden;
+	font:bold 14px/14px 'Asap', sans-serif;  /* 加粗 字体大小 行高 字体 */ /* 字体加引号 字体中一个或多个空格的 有特殊字符 关键字匹配的字体名 中文加*/
+	color:#fff;
+	text-shadow:none;     /* 文字阴影 */
+	background:transparent; 
+	-webkit-border-radius:0;
+	-moz-border-radius:0;
+	border-radius:0;
+	height:33px;
+	width:90px;
+	border:none;
+	box-shadow:none;
+	height:auto;
+	text-decoration:none;
+	
+	text-transform:uppercase;   /* 英文字母大写，对中文无意义 也有小写首字母大写*/
+	-webkit-transition:all 0.3s ease;
+	-moz-transition:all 0.3s ease;
+	-o-transition:all 0.3s ease;
+	transition:all 0.3s ease;
+}
+.btn-link span {
+	position:relative;
+	z-index:10;
+	height:33px;
+	width:90px;
+}
+.btn-link:before {     /*:before 选择器在被选元素的内容前面插入内容。*/
+	background:#2f98cd; 
+	display:block;
+	position:absolute;
+	top:0;
+	right:0;
+	bottom:0;
+	left:0;
+	z-index:1;
+	content:'';
+}
+.btn-link:after {      /*:before 选择器在被选元素的内容前面插入内容。*/
+	background:#da3300;
+	display:block;
+	-webkit-transition:0.8s;
+	-moz-transition:0.8s;
+	-o-transition:0.8s;
+	transition:0.8s;
+	position:absolute;
+	top:100%;
+	right:0;
+	bottom:0;
+	left:0;
+	z-index:2;
+	content:'';
+	-webkit-transition:all 0.5s ease;
+	-moz-transition:all 0.5s ease;
+	-o-transition:all 0.5s ease;
+	transition:all 0.5s ease;
+}
+.btn-link:hover, .btn-link:active{
+	color:#fff;
+	background:transparent;
+	text-shadow:none;
+	box-shadow:none;
+	text-decoration:none;
+	-webkit-transition:all 0.3s ease;
+	-moz-transition:all 0.3s ease;
+	-o-transition:all 0.3s ease;
+	transition:all 0.3s ease;
+}
+.btn-link:hover:after, .btn-link:active:after{ top:0; }
+.btn-link:focus { text-decoration:none; }
+
